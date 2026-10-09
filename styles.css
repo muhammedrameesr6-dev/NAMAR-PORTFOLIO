@@ -339,8 +339,76 @@ body {
 @media (max-width: 992px) {
     .about-grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
     }
     .work-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-image-col {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .container {
+        padding: 0 1.5rem;
+    }
+    .main-header {
+        padding: 0 1.5rem;
+    }
+    .logo-text {
+        font-size: clamp(3rem, 15vw, 6rem);
+        letter-spacing: 1px;
+    }
+    .hero-top, .hero-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    .hello-heading {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .about-content-col {
+        text-align: center;
+    }
+    .about-tags-row, .skills-pills-container {
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .category-title {
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+    }
+    .work-category {
+        text-align: center;
+    }
+    .highlight-text {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .logos-container {
+        gap: 2rem;
+    }
+    .collab-logo {
+        max-width: 120px;
+        max-height: 50px;
+    }
+    .work-img {
+        height: 250px;
+    }
+    .work-section, .skills-section, .about-section, .footer-section {
+        padding: 60px 0;
     }
 }
